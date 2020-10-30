@@ -26,7 +26,6 @@ export function fillForm() {
   loadStorage()
   const gi = document.getElementById.bind(document)
   const now = new Date()
-  now.setMilliseconds(0)
   now.setSeconds(0)
 
   gi('field-firstname').value = user.firstname
@@ -36,8 +35,8 @@ export function fillForm() {
   gi('field-address').value = user.address
   gi('field-city').value = user.city
   gi('field-zipcode').value = user.zipcode
-  gi('field-datesortie').valueAsDate = now
-  gi('field-heuresortie').valueAsDate = now
+  gi('field-datesortie').value = now.toISOString().split('T').shift()
+  gi('field-heuresortie').value = now.toLocaleTimeString()
 
   gi('generate-btn').addEventListener('click', () => fillStorage({
     firstname: gi('field-firstname').value,
