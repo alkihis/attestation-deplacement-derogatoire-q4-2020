@@ -24,13 +24,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lab-mi/attestation-deplacement-derogatoire-q4-2020"
+    "url": "git+https://github.com/alkihis/attestation-deplacement-derogatoire-q4-2020"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lab-mi/attestation-deplacement-derogatoire-q4-2020/issues"
+    "url": "https://github.com/alkihis/attestation-deplacement-derogatoire-q4-2020/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
