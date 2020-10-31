@@ -36,7 +36,7 @@ export function fillForm() {
   gi('field-city').value = user.city
   gi('field-zipcode').value = user.zipcode
   gi('field-datesortie').value = now.toISOString().split('T').shift()
-  gi('field-heuresortie').value = now.toLocaleTimeString()
+  gi('field-heuresortie').value = now.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })
 
   gi('generate-btn').addEventListener('click', () => fillStorage({
     firstname: gi('field-firstname').value,
